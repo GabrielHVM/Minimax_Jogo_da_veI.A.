@@ -26,6 +26,14 @@ class Game:
   def get_token_winner(self):
     return self.token_winner
 
+  def get_empty_places(self):
+    empty_places = []
+    for i in range(3):
+      for j in range(3):
+        if self.board[i][j] == white:
+          empty_places.append([i,j])
+    return empty_places
+
   def check_winner(self):
     for i in range(3):
       lines = (self.board[i][0] == self.board[i][1]) and (self.board[i][1] == self.board[i][2]) and (self.board[i][0] != white)
