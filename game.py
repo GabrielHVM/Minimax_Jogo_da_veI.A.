@@ -58,4 +58,5 @@ class Game:
       for j in range(3):
         if self.board[i][j] == white:
           return False
+    self.token_winner = "DRAW"
     return "DRAW"

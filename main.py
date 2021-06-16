@@ -12,7 +12,7 @@ def main():
       os.system('cls' if os.name == 'nt' else 'clear')
       game.print_board()
       if player_one.get_my_turn():
-        print("Turno do jogador 1 : ")
+        print(f"Turno do {player_one.get_token()} : ")
         i,j = player_one.get_player_input()
         if game.check_play(i,j):    
           player_one.make_play(i,j)
@@ -22,7 +22,7 @@ def main():
           print("Posição já ocupada!")
           input("Aperte ENTER para continuar!")
       elif player_two.get_my_turn():
-        print("Turno do jogador 2 : ")
+        print(f"Turno do {player_two.get_token()} : ")
         i,j = player_two.get_player_input()
         if game.check_play(i,j):
           player_two.make_play(i,j)
@@ -32,10 +32,16 @@ def main():
           print("Posição já ocupada!")
           input("Aperte ENTER para continuar!")
     if player_one.get_token() == game.get_token_winner():
+      os.system('cls' if os.name == 'nt' else 'clear')
+      game.print_board()
       print("Jogador numero 1 ganhou!")
     elif player_two.get_token() == game.get_token_winner():
+      os.system('cls' if os.name == 'nt' else 'clear')
+      game.print_board()
       print("Jogador numero 2 ganhou!")
     elif game.get_token_winner() == "DRAW":
+      os.system('cls' if os.name == 'nt' else 'clear')
+      game.print_board()
       print("Empate!")
   except KeyboardInterrupt:
     print("Até mais! :)")

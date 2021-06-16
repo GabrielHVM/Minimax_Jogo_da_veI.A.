@@ -1,3 +1,4 @@
 class Minimax:
-  def __init__(self,game ):
+  def __init__(self,game,token):
     self.game = game
+    self.token = token
