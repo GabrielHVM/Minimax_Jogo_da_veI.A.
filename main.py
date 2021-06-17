@@ -1,6 +1,4 @@
-from game import Game
-from player import Player
-from minimax import Minimax
+from Game_class.game import Game
 import os
 
 def main():

@@ -1,8 +1,8 @@
 white = " "
 import os
 import sys
-from player import Player
-from minimax import Minimax
+from Player_class.player import Player
+from IA_class.minimax import Minimax
 from random import randrange
 from time import sleep
 
