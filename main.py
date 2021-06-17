@@ -1,7 +1,6 @@
 from game import Game
 from player import Player
 from minimax import Minimax
-from window import Window
 import os
 
 def main():
