@@ -20,7 +20,7 @@ Para que seja possível a execução do jogo em sua máquina, serão necessário
 
 Para a execução do jogo faça o clone do repositório:
 ```
-git clone https://github.com/GabrielHVM/Minimax_Jogo_da_veI.A..git
+git clone https://github.com/GabrielHVM/Minimax_Jogo_da_veI.A._.git
 ```
 Após o clone, entre na pasta do repositório e execute o arquivo `jogo_da_veia.py`:
 ```
